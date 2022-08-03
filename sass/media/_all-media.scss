@@ -1,0 +1,19 @@
+@use "_header-m";
+@use "_intro-section-m";
+@use "_capabilities-m";
+@use "_solutions-m";
+@use "banner-free-m";
+@use "cameras-m";
+@use "surveillance-m";
+
+
+@media  (max-width:1050px) {
+  html {
+    overflow-x: hidden;
+  }
+}
+@media  (max-width:550px) {
+  html {
+    overflow-x: hidden;
+  }
+}

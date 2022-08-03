@@ -1,0 +1,59 @@
+#ensure {
+  .dots {
+    margin-top: 40px;
+    margin-left: 50%;
+  }
+  padding: 80px 0;
+  .ensure-title {
+    font-weight: 700;
+    font-size: 2rem;
+
+    /* identical to box height, or 214% */
+
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #364C76;
+  }
+  .ensure-box {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    .ensure-video {
+      width: 40%;
+      video {
+        width: 550px;
+        max-height: 270px;
+        border-radius: 20px;
+      }
+    }
+    .ensure-texts {
+      width: 40%;
+      h3 {
+        font-size: 1.2rem;
+line-height: 77px;
+/* identical to box height, or 321% */
+
+text-align: center;
+text-transform: uppercase;
+
+color: #364C76;
+
+      }
+      p {
+        font-family: 'Circe';
+font-style: normal;
+font-weight: 400;
+font-size: 1rem;
+line-height: 24px;
+/* or 150% */
+
+
+color: #364C76;
+      }
+    }
+  }
+
+  
+}

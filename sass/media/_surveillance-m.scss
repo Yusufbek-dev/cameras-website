@@ -1,0 +1,21 @@
+@media (max-width:1050px) {
+  #surveillance {
+    .surveillance-box {
+      justify-content: center;
+      .sur-img {
+        display: none;
+        img {
+        }
+        .sur-texts{
+          width: 90%;
+        }
+      }
+    }
+  }
+  .sur-btn {
+    
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 60px;
+  }
+}

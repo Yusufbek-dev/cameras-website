@@ -1,0 +1,73 @@
+@use "../abstract/colors" as *;
+.banner-free {
+  display: flex;
+  padding:26px 40px;
+  align-items: center;
+  width: 100%;
+  max-height: 141px;
+  background-color: #0E092A;
+  background: #0E092A;
+  box-shadow: 0px 2px 150px 20px rgba($primary-color, 0.12);
+  border-radius: 20px;
+  position: relative;
+  z-index: 9;
+  transform: translateY(-50%);
+    &>img:first-child{
+      z-index: -999;
+      position: absolute;
+      left: -50px;
+      bottom: -5px;
+    }
+    &>img:nth-child(2){
+      z-index: -22;
+      position: absolute;
+      right: -50px;
+      top: -50px;
+    }
+    span {
+      width: 30%;
+      font-weight: 400;
+      font-size: .9rem;
+      color: #FFFFFF;
+      vertical-align: middle;
+        img {
+          margin-right: 10px;
+        }
+        strong {
+          font-weight: 700;
+          font-size: 1.1rem;
+          text-transform: uppercase;
+      }
+    }
+    form {
+      margin-left: 1%;
+      input[type="tel"] {
+        max-width: 50%;
+        padding: 11px 170px 11px 11px;
+        background-color: rgba(255, 255, 255, 0.2);
+        box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
+        border-radius: 60px;
+        color: #FFFFFF;
+        border: none;
+        &::placeholder {
+          padding: 11px 170px 11px 29px;
+          background:url(/images/icons/phone-call.png) no-repeat left;
+        }
+      }
+      input[type="submit"] {
+        width: 40%;
+        margin-left: 10px;
+        cursor: pointer;
+        padding: 10px 60px;
+        font-weight: 700;
+        font-size: 1rem;
+        line-height: 24px;
+        color: #FFFFFF;
+        background: #00C5DE;
+        box-shadow: 0px 2px 22px rgba(0, 0, 0, 0.12);
+        border-radius: 60px;
+        border: none;
+      }
+    }
+}
+

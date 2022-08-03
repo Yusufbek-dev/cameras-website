@@ -1,0 +1,28 @@
+#question {
+  padding-top: 90px;
+  padding-bottom: 80px;
+  background: linear-gradient(180deg, #0C0823 0%, #130C35 100%);
+  .q-title{
+    margin-bottom: 20px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 2rem;
+
+    text-align: center;
+
+    color: #FFFFFF;
+
+  }
+  .q-box {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    p {
+      color: #FFFFFF;
+      padding: 10px 50px 10px 10px;
+      width: 80%;
+      border: 2px solid gray;
+    }
+  }
+}

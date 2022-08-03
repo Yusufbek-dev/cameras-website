@@ -1,0 +1,20 @@
+@media (max-width:1050px) {
+  #capabilities {
+    .capabilities-list {
+      .capabilities-item {
+        width: 45%;
+      }
+    }
+  }
+}
+
+@media (max-width:550px) {
+  #capabilities {
+    .capabilities-list {
+      justify-content: center;
+      .capabilities-item {
+        width: 90%;
+      }
+    }
+  }
+}

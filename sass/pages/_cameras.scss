@@ -1,0 +1,59 @@
+#cameras {
+  padding-bottom: 120px;
+  background: linear-gradient(180deg, #0C0823 0%, #130C35 100%);
+  .cameras-title {
+    padding-top: 120px;
+    margin-bottom: 120px;
+    font-weight: 700;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  .cameras-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .camera-item {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    .camera-img {
+      img {
+        display: block;
+        max-width: 550px;
+        max-height: 400px;
+      }
+    }
+    .camera-text {
+      h3 {
+        display: flex;
+        align-items: center;
+        font-weight: 700;
+        font-size: 1.4rem;
+        text-align: center;
+
+        color: #FFFFFF;
+        &::before {
+          content: "";
+          margin-right: 10px;
+          display: inline-block;
+          background-image: url(/images/icons/camera-icon.png);
+          width: 55px;
+          height: 55px;
+          margin-left: 14px;
+        }
+      }
+      p {
+        padding-left: 80px;
+        width: 90%;
+        font-weight: 350;
+        font-size: .8rem;
+        line-height: 24px;
+        color: #FFFFFF;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+@use "../abstract/colors" as *;
+#intro {
+  max-height: 100vh;
+  padding-top: 130px;
+  background: url(/images/intro-bg.png) ;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 0 -30px;
+
+  .intro-title {
+    width: 70%;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3rem;
+    text-align: center;
+    margin: 0 auto 10px auto;
+    color:$primary-color;
+  }
+  .intro-subtitle {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    color: $general-text-color;
+  }
+  .intro-btn {
+    position: relative;
+    z-index: 2;
+    margin-left: 50%;
+    margin-top: 32px;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    font-size: .9rem;
+    text-align: center;
+    text-transform: uppercase;
+    background: $primary-color;
+    border: none;
+    color: #fff;
+    border-radius: 61px;
+  }
+ 
+  .intro-img {
+    position: relative;
+    z-index: 1;
+    width: 90%;
+    transform:translateY(-25%);
+    img {
+      width: 90%;
+      height: auto;
+    }
+  }
+  
+}

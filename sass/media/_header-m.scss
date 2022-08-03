@@ -1,0 +1,63 @@
+@use "../abstract/colors" as *;
+
+@media (max-width:1050px) {
+  .nav-box>{
+    .head-buttons {
+      display: none;
+    }
+  }
+  .nav-list {
+    transition: .3s;
+    transform: translateX(-100%);
+    position: fixed;
+    z-index: 99;
+    top: 13vh;
+    width: 50%;
+    min-height: 87vh;
+    left: 0;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgba($secondary-color, .99);
+    .head-buttons {
+      display: block;
+      .nav-form {
+        margin-top: 10px;
+      }
+    }
+  }
+  #nav-check:checked + .nav-list {
+    transform: translateX(0);
+  }
+  .nav-list-item {
+    text-align: center;
+    a {
+      color: #fff;
+      &:hover {
+        color:$primary-color;
+      }
+    }
+  }
+  .nav-list-item:first-child {
+    margin-left: 24px;
+  }
+ 
+  .nav-bar {
+    display: block;
+  }
+  #close-bar {
+    display: block;
+    transition: .2s;
+    transform: translateX(-100%);
+    z-index: 98;
+    position: fixed;
+    top: 13vh;
+    width: 100%;
+    min-height: 87vh;
+    left: 0;
+    background-color:rgba($primary-color, 0.6);
+  }
+  #nav-check:checked ~ #close-bar {
+    transform: translateX(0);
+  }
+}

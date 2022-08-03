@@ -1,0 +1,28 @@
+@media (max-width:1050px) {
+  #solutions {
+    .solutions-box {
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .solutions-right {
+        width: 85%;
+      }
+      .solutions-left {
+        width: 85%;
+      }
+    }
+  }
+}
+
+@media (max-width:550px) {
+  #solutions {
+    .solutions-box {
+      .solutions-right {
+        width: 95%;
+      }
+      .solutions-left {
+        width: 95%;
+      }
+    }
+  }
+}

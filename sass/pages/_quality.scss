@@ -1,0 +1,54 @@
+@use "../abstract/colors" as *;
+#quality {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  position: relative;
+  &>img:first-child {
+    position:absolute;
+    left: 0;
+    top: 70%;
+  }
+  &>img:nth-child(2) {
+    position:absolute;
+    right: 0;
+    top: 20%;
+  }
+  .quality-title {
+    margin-bottom: 48px;
+    font-size: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+    color: $secondary-color;
+  }
+  .quality-img {
+    background: #FFFFFF;
+    border: 2px solid $primary-color;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.11);
+    border-radius: 20px;
+    width: 70%;
+    margin: 0 auto;
+    img {
+      margin-top: 15px;
+      display: block;
+      width: 100%;
+      max-width: 1100px;
+      max-height: 639px;
+      border-radius: 20px;
+    }
+  }
+  .quality-btn {
+    margin-top: 70px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    background-color: $primary-color;
+    color: #fff;
+    padding: 5px 22px;
+    border-radius: 61px;
+    font-weight: 600;
+    font-size: .9rem;
+    line-height: 40px;
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}

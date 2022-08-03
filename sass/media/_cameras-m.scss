@@ -1,0 +1,23 @@
+@media (max-width:1050px) {
+  #cameras {
+    .cameras-list {
+      flex-direction: column-reverse;
+      .camera-item {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        row-gap: 20px;
+        .camera-text {
+          width: 90%;
+        }
+        .camera-img {
+          width: 90%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:550px) {
+  
+}
